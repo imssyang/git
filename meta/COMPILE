@@ -1,0 +1,7 @@
+
+make configure
+./configure --prefix=/opt/git --with-openssl --with-libpcre --with-curl --with-expat --with-iconv=/opt/iconv CFLAGS="-I/opt/iconv/include" LDFLAGS="-L/opt/iconv/lib"
+make install
+make all doc info
+make install install-doc install-html install-info
+
